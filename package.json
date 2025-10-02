@@ -1,0 +1,39 @@
+{
+  "name": "eslint-plugin-baseline",
+  "version": "1.0.0",
+  "description": "ESLint plugin to enforce Baseline web standards and block non-universally supported web APIs",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "mocha tests/**/*.test.js",
+    "lint": "eslint lib tests",
+    "lint:fix": "eslint lib tests --fix"
+  },
+  "keywords": [
+    "eslint",
+    "eslintplugin",
+    "baseline",
+    "compatibility",
+    "web-apis"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "peerDependencies": {
+    "eslint": ">=8.0.0"
+  },
+  "dependencies": {
+    "web-features": "^1.4.0"
+  },
+  "devDependencies": {
+    "@eslint/js": "^8.57.0",
+    "eslint": "^8.57.0",
+    "mocha": "^10.2.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/eslint-plugin-baseline.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yourusername/eslint-plugin-baseline/issues"
+  },
+  "homepage": "https://github.com/yourusername/eslint-plugin-baseline#readme"
+}
