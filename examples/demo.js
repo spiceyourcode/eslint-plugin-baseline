@@ -1,12 +1,15 @@
 const { ESLint } = require('eslint');
-const path = require('path');
+const baselinePlugin = require('../lib/index.js');
+
+console.log('Starting ESLint Plugin Baseline Demo...');
 
 // Create an ESLint instance with the baseline plugin
 const eslint = new ESLint({
+  plugins: {
+    baseline: baselinePlugin
+  },
   overrideConfig: {
-    plugins: [
-      require.resolve('../lib/index.js') // Load plugin from local path
-    ],
+    plugins: ['baseline'],
     rules: {
       'baseline/no-unstable-apis': 'error'
     },
